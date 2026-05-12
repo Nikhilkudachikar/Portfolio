@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Melvin Godad — Data Analyst</title>
+  <title>ℕ𝕚𝕜𝕙𝕚𝕝 𝕂𝕦𝕕𝕒𝕔𝕙𝕚𝕜𝕒𝕣 — Data Analyst</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -21,19 +21,19 @@
 
     :root {
       --bg: #ffffff;
-      --bg2: #fafafa;
-      --bg3: #f0f0f0;
+      --bg2: #131ec07e;
+      --bg3: #e6f0f9;
       --surface: #ffffff;
-      --surface2: #f5f5f5;
-      --accent: #ff9800;
-      --accent2: #f57c00;
-      --accent3: #ffcc80;
-      --gold: #f0c060;
-      --text: #1a1a1a;
-      --text2: #4a4a4a;
-      --text3: #7a7a7a;
-      --border: rgba(230, 81, 0, 0.3);
-      --glow: 0 0 40px rgba(255, 152, 0, 0.2);
+      --surface2: #e8f4f8;
+      --accent: #1b3b4e;
+      --accent2: #a72e56;
+      --accent3: #b0e2f5;
+      --gold: #1b3b4e;
+      --text: #592980;
+      --text2: #1a1a4b;
+      --text3: #4a4a7a;
+      --border: rgba(135, 206, 235, 0.3);
+      --glow: 0 0 40px rgba(86, 132, 150, 0.2);
       --radius: 16px;
       --font-display: 'Syne', sans-serif;
       --font-body: 'DM Mono', monospace;
@@ -57,14 +57,14 @@
     /* CUSTOM CURSOR */
     .cursor {
       position: fixed;
-      width: 10px;
-      height: 10px;
-      background: var(--accent);
+      width: 15px;
+      height: 15px;
+      background: #000000;
       border-radius: 50%;
       pointer-events: none;
       z-index: 9999;
       transform: translate(-50%, -50%);
-      transition: transform 0.1s, width 0.2s, height 0.2s, opacity 0.2s;
+      transition: width 0.2s, height 0.2s, opacity 0.2s;
       mix-blend-mode: screen;
     }
 
@@ -72,7 +72,7 @@
       position: fixed;
       width: 36px;
       height: 36px;
-      border: 1.5px solid rgba(255, 152, 0, 0.5);
+      border: 1.5px solid rgba(0, 0, 0, 0.5);
       border-radius: 50%;
       pointer-events: none;
       z-index: 9998;
@@ -102,8 +102,8 @@
       z-index: 0;
       pointer-events: none;
       background-image:
-        linear-gradient(rgba(255, 152, 0, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 152, 0, 0.03) 1px, transparent 1px);
+        linear-gradient(rgba(135, 206, 235, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(135, 206, 235, 0.03) 1px, transparent 1px);
       background-size: 60px 60px;
     }
 
@@ -134,6 +134,13 @@
       font-size: 18px;
       color: var(--text);
       letter-spacing: -0.5px;
+      text-decoration: none;
+      transition: transform 0.3s ease, color 0.3s ease;
+      display: inline-block;
+    }
+
+    .nav-logo:hover {
+      transform: scale(1.05);
     }
 
     .nav-logo span {
@@ -197,7 +204,7 @@
     .hero-orb-1 {
       width: 500px;
       height: 500px;
-      background: radial-gradient(circle, rgba(255, 152, 0, 0.12), transparent 70%);
+      background: radial-gradient(circle, rgba(135, 206, 235, 0.12), transparent 70%);
       top: -100px;
       right: -100px;
     }
@@ -205,7 +212,7 @@
     .hero-orb-2 {
       width: 400px;
       height: 400px;
-      background: radial-gradient(circle, rgba(255, 204, 128, 0.08), transparent 70%);
+      background: radial-gradient(circle, rgba(176, 226, 245, 0.08), transparent 70%);
       bottom: 0;
       left: -80px;
       animation-delay: -4s;
@@ -241,7 +248,7 @@
       letter-spacing: 0.15em;
       text-transform: uppercase;
       margin-bottom: 32px;
-      background: rgba(255, 152, 0, 0.05);
+      background: rgba(135, 206, 235, 0.05);
       animation: fade-up 0.6s ease both;
     }
 
@@ -341,7 +348,7 @@
 
     .btn-primary:hover {
       transform: translateY(-2px);
-      box-shadow: 0 12px 40px rgba(255, 152, 0, 0.4);
+      box-shadow: 0 12px 40px rgba(135, 206, 235, 0.4);
     }
 
     .btn-secondary {
@@ -421,7 +428,7 @@
       padding: 4px 14px;
       border: 1px solid var(--border);
       border-radius: 100px;
-      background: rgba(255, 152, 0, 0.05);
+      background: rgba(135, 206, 235, 0.05);
       margin-bottom: 20px;
     }
 
@@ -439,6 +446,18 @@
       font-family: var(--font-serif);
       font-style: italic;
       color: var(--text2);
+      font-weight: 400;
+    }
+
+    .analyst-text {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    .script-number {
+      font-family: var(--font-serif);
+      font-style: italic;
       font-weight: 400;
     }
 
@@ -485,8 +504,8 @@
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(ellipse at 20% 80%, rgba(255, 152, 0, 0.08) 0%, transparent 60%),
-        radial-gradient(ellipse at 80% 20%, rgba(255, 204, 128, 0.06) 0%, transparent 60%);
+        radial-gradient(ellipse at 20% 80%, rgba(135, 206, 235, 0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(176, 226, 245, 0.06) 0%, transparent 60%);
     }
 
     .about-initials {
@@ -495,7 +514,7 @@
       font-weight: 800;
       letter-spacing: -8px;
       color: transparent;
-      -webkit-text-stroke: 1px rgba(255, 152, 0, 0.3);
+      -webkit-text-stroke: 1px rgba(135, 206, 235, 0.3);
       position: relative;
       z-index: 1;
       user-select: none;
@@ -528,7 +547,7 @@
       left: -20px;
       width: 60px;
       height: 60px;
-      border: 2px solid rgba(255, 152, 0, 0.3);
+      border: 2px solid rgba(135, 206, 235, 0.3);
       border-radius: 12px;
       transform: rotate(15deg);
     }
@@ -559,7 +578,7 @@
     .chip:hover {
       border-color: var(--accent);
       color: var(--accent);
-      background: rgba(255, 152, 0, 0.05);
+      background: rgba(135, 206, 235, 0.05);
     }
 
     /* SKILLS */
@@ -605,7 +624,7 @@
     }
 
     .skill-card:hover {
-      border-color: rgba(255, 152, 0, 0.3);
+      border-color: rgba(135, 206, 235, 0.3);
       transform: translateX(4px);
     }
 
@@ -702,13 +721,13 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse at 50% 0%, rgba(255, 152, 0, 0.07), transparent 60%);
+      background: radial-gradient(ellipse at 50% 0%, rgba(135, 206, 235, 0.07), transparent 60%);
       opacity: 0;
       transition: opacity 0.3s;
     }
 
     .project-card:hover {
-      border-color: rgba(255, 152, 0, 0.35);
+      border-color: rgba(135, 206, 235, 0.35);
       transform: translateY(-8px);
       box-shadow: var(--glow);
     }
@@ -721,7 +740,7 @@
       font-family: var(--font-display);
       font-size: 48px;
       font-weight: 800;
-      color: rgba(255, 152, 0, 0.1);
+      color: rgba(135, 206, 235, 0.1);
       letter-spacing: -2px;
       line-height: 1;
       margin-bottom: 20px;
@@ -729,7 +748,7 @@
     }
 
     .project-card:hover .project-num {
-      color: rgba(255, 152, 0, 0.2);
+      color: rgba(135, 206, 235, 0.2);
     }
 
     .project-name {
@@ -781,7 +800,7 @@
       top: 0;
       bottom: 0;
       width: 1px;
-      background: linear-gradient(to bottom, var(--accent), rgba(255, 152, 0, 0.1));
+      background: linear-gradient(to bottom, var(--accent), rgba(135, 206, 235, 0.1));
     }
 
     .exp-item {
@@ -798,7 +817,7 @@
       height: 11px;
       border-radius: 50%;
       background: var(--accent);
-      box-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
+      box-shadow: 0 0 20px rgba(135, 206, 235, 0.5);
     }
 
     .exp-period {
@@ -869,13 +888,13 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse at 0% 50%, rgba(255, 152, 0, 0.06), transparent 50%);
+      background: radial-gradient(ellipse at 0% 50%, rgba(135, 206, 235, 0.06), transparent 50%);
     }
 
     .edu-icon {
       width: 80px;
       height: 80px;
-      background: rgba(255, 152, 0, 0.08);
+      background: rgba(135, 206, 235, 0.08);
       border: 1px solid var(--border);
       border-radius: 20px;
       display: flex;
@@ -974,7 +993,7 @@
     }
 
     .cert-card:hover {
-      border-color: rgba(255, 152, 0, 0.3);
+      border-color: rgba(135, 206, 235, 0.3);
       transform: translateY(-4px);
     }
 
@@ -1004,9 +1023,9 @@
       border-radius: 100px;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      background: rgba(255, 152, 0, 0.1);
+      background: rgba(135, 206, 235, 0.1);
       color: var(--accent);
-      border: 1px solid rgba(255, 152, 0, 0.2);
+      border: 1px solid rgba(135, 206, 235, 0.2);
     }
 
     /* CONTACT */
@@ -1034,8 +1053,8 @@
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(ellipse at 30% 50%, rgba(255, 152, 0, 0.07), transparent 60%),
-        radial-gradient(ellipse at 70% 50%, rgba(255, 204, 128, 0.05), transparent 60%);
+        radial-gradient(ellipse at 30% 50%, rgba(135, 206, 235, 0.07), transparent 60%),
+        radial-gradient(ellipse at 70% 50%, rgba(176, 226, 245, 0.05), transparent 60%);
     }
 
     .contact-tagline {
@@ -1100,7 +1119,7 @@
     }
 
     .contact-link.primary:hover {
-      box-shadow: 0 12px 40px rgba(255, 152, 0, 0.4);
+      box-shadow: 0 12px 40px rgba(135, 206, 235, 0.4);
     }
 
     .contact-bottom {
@@ -1121,7 +1140,7 @@
     }
 
     .contact-info-card:hover {
-      border-color: rgba(255, 152, 0, 0.3);
+      border-color: rgba(135, 206, 235, 0.3);
     }
 
     .contact-info-icon {
@@ -1290,7 +1309,7 @@
 
   <!-- NAV -->
   <nav id="nav">
-    <div class="nav-logo">MJG<span>.</span></div>
+    <a href="#hero" class="nav-logo name-text">ℕℙ𝕂<span>.</span></a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -1308,8 +1327,8 @@
     <div class="hero-content">
       <div class="hero-tag"><span class="dot"></span> Available for opportunities</div>
       <h1 class="hero-name">
-        Melvin<br>
-        <span class="line2">Godad</span>
+        <span class="name-text">ℕ𝕚𝕜𝕙𝕚𝕝</span><br>
+        <span class="line2 name-text">𝕂𝕦𝕕𝕒𝕔𝕙𝕚𝕜𝕒𝕣</span>
       </h1>
       <div class="hero-title">Data Analyst & Dashboard Engineer</div>
       <p class="hero-desc">
@@ -1322,15 +1341,15 @@
       </div>
       <div class="hero-stats">
         <div>
-          <div class="stat-val">3<span>+</span></div>
+          <div class="stat-val script-number">3<span>+</span></div>
           <div class="stat-lbl">Projects Delivered</div>
         </div>
         <div>
-          <div class="stat-val">8.2<span>/10</span></div>
+          <div class="stat-val script-number">8.0<span>/10</span></div>
           <div class="stat-lbl">Academic CGPA</div>
         </div>
         <div>
-          <div class="stat-val">5<span>+</span></div>
+          <div class="stat-val script-number">5<span>+</span></div>
           <div class="stat-lbl">Technical Skills</div>
         </div>
       </div>
@@ -1370,7 +1389,7 @@
   <!-- SKILLS -->
   <section id="skills">
     <div class="section-label">Technical Skills</div>
-    <div class="section-title">Tools of <em>my craft</em></div>
+    <div class="section-title analyst-text">Tools of my craft</div>
     <div class="skills-layout">
       <div class="skill-categories">
         <div class="skill-card reveal">
@@ -1396,42 +1415,42 @@
       </div>
       <div class="skill-bars reveal reveal-delay-2">
         <div class="skill-bar-item">
-          <div class="skill-bar-top"><span class="skill-bar-name">Python</span><span class="skill-bar-pct">85%</span>
+          <div class="skill-bar-top"><span class="skill-bar-name">Python</span><span class="skill-bar-pct script-number">85%</span>
           </div>
           <div class="skill-bar-track">
             <div class="skill-bar-fill" data-width="85"></div>
           </div>
         </div>
         <div class="skill-bar-item">
-          <div class="skill-bar-top"><span class="skill-bar-name">Power BI</span><span class="skill-bar-pct">82%</span>
+          <div class="skill-bar-top"><span class="skill-bar-name">Power BI</span><span class="skill-bar-pct script-number">82%</span>
           </div>
           <div class="skill-bar-track">
             <div class="skill-bar-fill" data-width="82"></div>
           </div>
         </div>
         <div class="skill-bar-item">
-          <div class="skill-bar-top"><span class="skill-bar-name">SQL</span><span class="skill-bar-pct">78%</span></div>
+          <div class="skill-bar-top"><span class="skill-bar-name">SQL</span><span class="skill-bar-pct script-number">78%</span></div>
           <div class="skill-bar-track">
             <div class="skill-bar-fill" data-width="78"></div>
           </div>
         </div>
         <div class="skill-bar-item">
           <div class="skill-bar-top"><span class="skill-bar-name">Excel (Advanced)</span><span
-              class="skill-bar-pct">88%</span></div>
+              class="skill-bar-pct script-number">88%</span></div>
           <div class="skill-bar-track">
             <div class="skill-bar-fill" data-width="88"></div>
           </div>
         </div>
         <div class="skill-bar-item">
           <div class="skill-bar-top"><span class="skill-bar-name">Pandas & NumPy</span><span
-              class="skill-bar-pct">80%</span></div>
+              class="skill-bar-pct script-number">80%</span></div>
           <div class="skill-bar-track">
             <div class="skill-bar-fill" data-width="80"></div>
           </div>
         </div>
         <div class="skill-bar-item">
           <div class="skill-bar-top"><span class="skill-bar-name">Data Visualization</span><span
-              class="skill-bar-pct">87%</span></div>
+              class="skill-bar-pct script-number">87%</span></div>
           <div class="skill-bar-track">
             <div class="skill-bar-fill" data-width="87"></div>
           </div>
@@ -1443,7 +1462,7 @@
   <!-- PROJECTS -->
   <section id="projects">
     <div class="section-label">Projects</div>
-    <div class="section-title">Work that <em>speaks numbers</em></div>
+    <div class="section-title analyst-text">Work that speaks numbers</div>
     <div class="projects-grid">
       <div class="project-card reveal">
         <div class="project-num">01</div>
@@ -1490,21 +1509,21 @@
   <!-- EXPERIENCE -->
   <section id="experience">
     <div class="section-label">Experience</div>
-    <div class="section-title">Building <em>from scratch</em></div>
+    <div class="section-title analyst-text">Building from scratch</div>
     <div class="exp-timeline">
       <div class="exp-item reveal">
         <div class="exp-period">Sep 2023 – Present</div>
         <div class="exp-title">Data Analyst (Academic & Projects)</div>
         <div class="exp-company">Jain College of Engineering, Belagavi, Karnataka</div>
         <ul class="exp-points">
-          <li>Designed and delivered 3+ end-to-end analytics projects spanning e-commerce, social media, and event
+          <li>Designed and delivered <span class="script-number">3+</span> end-to-end analytics projects spanning e-commerce, social media, and event
             analysis.</li>
           <li>Automated data aggregation pipelines in Python using Pandas, reducing manual reporting effort
             significantly.</li>
           <li>Built interactive Power BI dashboards with real-time drill-down capabilities for stakeholder reporting.
           </li>
           <li>Performed data cleaning and visual analysis on event feedback, producing actionable insight reports.</li>
-          <li>Consistently maintained a CGPA of 8.2/10 while delivering project work on time.</li>
+          <li>Consistently maintained a CGPA of <span class="script-number">8.0/10</span> while delivering project work on time.</li>
         </ul>
       </div>
     </div>
@@ -1513,7 +1532,7 @@
   <!-- EDUCATION -->
   <section id="education">
     <div class="section-label">Education</div>
-    <div class="section-title">Where it <em>all started</em></div>
+    <div class="section-title analyst-text">Where it all started</div>
     <div class="edu-card reveal">
       <div class="edu-icon">🎓</div>
       <div class="edu-info">
@@ -1523,7 +1542,7 @@
         <div class="edu-period-badge">Sep 2023 – Jul 2027</div>
       </div>
       <div class="edu-gpa">
-        <div class="edu-gpa-val">8.2<span>/10</span></div>
+        <div class="edu-gpa-val script-number">8.0<span>/10</span></div>
         <div class="edu-gpa-lbl">Current CGPA</div>
       </div>
     </div>
@@ -1532,9 +1551,9 @@
   <!-- CERTIFICATIONS -->
   <section id="certifications">
     <div class="section-label">Certifications</div>
-    <div class="section-title">Always <em>learning</em></div>
+    <div class="section-title analyst-text">Always learning</div>
     <div class="cert-grid">
-      <a href="certificates/Coursera T6GRYZRKX0ZQ.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+      <a href="#" onclick="event.preventDefault();" style="text-decoration: none; color: inherit;">
         <div class="cert-card reveal">
           <div class="cert-icon">🤖</div>
           <div>
@@ -1544,7 +1563,7 @@
           </div>
         </div>
       </a>
-      <a href="certificates/Coursera_google_ads.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+      <a href="certificates/Courseragoogle ads .pdf" target="_blank" style="text-decoration: none; color: inherit;">
         <div class="cert-card reveal reveal-delay-2">
           <div class="cert-icon">🎯</div>
           <div>
@@ -1554,7 +1573,7 @@
           </div>
         </div>
       </a>
-      <a href="certificates/microsoft_ms.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+      <a href="certificates/Coursera_Excel.pdf" target="_blank" style="text-decoration: none; color: inherit;">
         <div class="cert-card reveal reveal-delay-4">
           <div class="cert-icon">💡</div>
           <div>
@@ -1564,7 +1583,7 @@
           </div>
         </div>
       </a>
-      <a href="certificates/Coursera_dv.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+      <a href="#" onclick="event.preventDefault();" style="text-decoration: none; color: inherit;">
         <div class="cert-card reveal">
           <div class="cert-icon">📊</div>
           <div>
@@ -1574,7 +1593,7 @@
           </div>
         </div>
       </a>
-      <a href="certificates/Coursera_bigQuery.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+      <a href="#" onclick="event.preventDefault();" style="text-decoration: none; color: inherit;">
         <div class="cert-card reveal reveal-delay-2">
           <div class="cert-icon">🗄️</div>
           <div>
@@ -1598,15 +1617,15 @@
   <!-- CONTACT -->
   <section id="contact">
     <div class="section-label">Contact</div>
-    <div class="section-title">Let's build <em>something great</em></div>
+    <div class="section-title analyst-text">Let's build something great</div>
     <div class="contact-inner">
       <div class="contact-hero reveal">
-        <div class="contact-tagline">Ready to turn your data<br>into <em>real insight?</em></div>
-        <div class="contact-email">melvingodad@gmail.com</div>
+        <div class="contact-tagline analyst-text">Ready to turn your data<br>into real insight?</div>
+        <div class="contact-email">nikhilkudachikar5@gmail.com</div>
         <div class="contact-links">
-          <a href="mailto:melvingodad@gmail.com" class="contact-link primary">✉ Send an Email</a>
-          <a href="https://www.linkedin.com/in/melvingodad" target="_blank" class="contact-link">💼 LinkedIn</a>
-          <a href="https://github.com/MelvinGodad" target="_blank" class="contact-link">🐙 GitHub</a>
+          <a href="mailto:nikhilkudachikar5@gmail.com" class="contact-link primary">✉ Send an Email</a>
+          <a href="https://www.linkedin.com/in/nikhil-kudachikar-3636322a4/" target="_blank" rel="noopener noreferrer" class="contact-link">💼 LinkedIn</a>
+          <a href="https://github.com/Nikhilkudachikar" target="_blank" rel="noopener noreferrer" class="contact-link">🐙 GitHub</a>
         </div>
       </div>
       <div class="contact-bottom">
@@ -1621,7 +1640,7 @@
           <div class="contact-info-icon">📞</div>
           <div>
             <div class="contact-info-lbl">Phone</div>
-            <div class="contact-info-val">+91 9740481600</div>
+            <div class="contact-info-val">+91 9036819410</div>
           </div>
         </div>
         <div class="contact-info-card reveal reveal-delay-4">
@@ -1637,8 +1656,8 @@
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-copy">© 2025 Melvin Godad. Crafted with precision.</div>
-    <div class="footer-brand">MJG<span>.</span></div>
+    <div class="footer-copy">© <span class="script-number">2025</span> <span class="name-text">ℕ𝕚𝕜𝕙𝕚𝕝 𝕂𝕦𝕕𝕒𝕔𝕙𝕚𝕜𝕒𝕣</span>. Crafted with precision.</div>
+    <div class="footer-brand name-text">ℕℙ𝕂<span>.</span></div>
   </footer>
 
   <script>
@@ -1648,7 +1667,7 @@
     let mx = 0, my = 0, rx = 0, ry = 0;
     document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
     function animateCursor() {
-      rx += (mx - rx) * 0.15; ry += (my - ry) * 0.15;
+      rx += (mx - rx) * 0.4; ry += (my - ry) * 0.4;
       cursor.style.left = mx + 'px'; cursor.style.top = my + 'px';
       ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
       requestAnimationFrame(animateCursor);
